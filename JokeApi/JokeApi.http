@@ -1,0 +1,6 @@
+@JokeApi_HostAddress = http://localhost:5142
+
+GET {{JokeApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
