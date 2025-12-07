@@ -1,6 +1,8 @@
-﻿namespace JokeApi.Services
+﻿using JokeApi.Models;
+
+namespace JokeApi.Services;
+
+public interface INumberService
 {
-    public class INumberService
-    {
-    }
+    NumberResponse Process(string numbersCsv, int direction);
 }

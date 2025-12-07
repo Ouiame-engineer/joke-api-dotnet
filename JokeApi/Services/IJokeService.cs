@@ -1,6 +1,8 @@
-﻿namespace JokeApi.Services
+﻿using JokeApi.Models;
+
+namespace JokeApi.Services;
+
+public interface IJokeService
 {
-    public class IJokeService
-    {
-    }
+    Task<List<JokeDto>> GetRandomJokesAsync(int count, CancellationToken ct = default);
 }
